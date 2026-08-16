@@ -276,7 +276,7 @@ span.brand-tagline {
     margin: 0 auto;
     padding: 0 20px 80px;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     align-items: center;
     position: relative;
