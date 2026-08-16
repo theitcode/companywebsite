@@ -276,7 +276,7 @@ span.brand-tagline {
     margin: 0 auto;
     padding: 0 20px 80px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
     align-items: center;
     position: relative;
@@ -614,65 +614,48 @@ span.brand-tagline {
     font-style: oblique;
 }
 
-/* HERO SECTION - TABLET & MOBILE RESPONSIVENESS */
+/* TABLET */
 @media screen and (max-width: 992px) {
-    .hero {
-        padding-top: 150px;
-    }
 
     .hero-container {
-        display: block;
+        grid-template-columns: 1fr;
+        gap: 40px;
         padding-bottom: 60px;
-        gap: 30px;
     }
 
-    .hero-subtitle {
-        text-align: left;
-        font-size: 0.75rem;
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+        margin-top: 0;
     }
 
     .hero-heading {
         font-size: 2.2rem;
-        text-align: left;
-        margin-bottom: 15px;
     }
 
     .hero-description {
         max-width: 100%;
-        text-align: left;
-        font-size: 0.8rem;
-        margin-bottom: 25px;
     }
 
     .hero-buttons {
-        justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 30px;
-    }
-
-    .btn, .btn-outline {
-        padding: 10px 18px;
-        font-size: 0.75rem;
-    }
-
-    .hero-tagline-bottom {
-        justify-content: flex-start;
-    }
-
-    .hero-tagline-bottom p {
-        font-size: 0.7rem;
-    }
-
-    /* Restored Right Hero Block (stacks below) */
-    .hero-right {
-        display: flex !important;
-        width: 100%;
-        margin-top: 15px;
     }
 }
 
+
+/* MOBILE */
 @media screen and (max-width: 480px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .hero-heading {
         font-size: 1.8rem;
     }
@@ -682,9 +665,14 @@ span.brand-tagline {
         width: 100%;
     }
 
-    .btn, .btn-outline {
+    .btn,
+    .btn-outline {
         width: 100%;
         justify-content: center;
+    }
+
+    .terminal-card {
+        width: 100%;
     }
 
     #live-code-display {
