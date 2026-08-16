@@ -621,7 +621,7 @@ span.brand-tagline {
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
+        display: block;
         padding-bottom: 60px;
         gap: 30px;
     }
