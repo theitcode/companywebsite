@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="THE IT CODE — Engineering high-value enterprise platforms, digital solutions and workflow systems from South Africa for the world.">
+  <meta name="theme-color" content="#f5f5f5">
+  <title> THE IT CODE | Enterprise Workflow Solutions & Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <!-- ===================================================== MOBILE OVERLAY ===================================================== -->
+
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+    <!-- ===================================================== MOBILE NAVIGATION ===================================================== -->
+
+    <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+        <div class="mobile-sidebar-inner">
+          <!-- MOBILE NAVIGATION -->
+           <nav class="mobile-navigation" aria-label="Mobile Navigation" >
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">Who we are</a>
+             <a href="#projects" class="mobile-link">Our flagship products</a>
+            <a href="#services" class="mobile-link">What we do</a>
+            <a href="#why-us" class="mobile-link">Why us</a>
+            <a href="#conntact" class="mobile-link">Let's talk</a>
+            </nav>
+            <!-- MOBILE FLAGSHIP PRODUCTS -->
+             <div class="mobile-products">
+                <div class="mobile-menu-label">
+                    FLAGSHIP PRODUCTS
+                </div>
+
+                <div class="mobile-product-links">
+                  <a href="#projects" class="mobile-product-link">
+                    <img src="images/healthos.png" alt="HealthOS">
+                    <span> HealthOS™</span>
+                  </a>
+                  
+                  <a href="#projects" class="mobile-product-link">
+                    <img src="images/thetux.png" alt="Founder Circle">
+                    <span>Founder Circle™</span>
+                  </a>
+                </div>
+            </div>
+            
+            <!-- MOBILE ACTIONS -->
+             <div class="mobile-actions">
+              <button type="button" class="mobile-action" onclick="openPopup('partnershipPopup')">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Partnership</span>
+              </button>
+
+              <button type="button" class="mobile-action" onclick="openPopup('investorPopup')">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Invest</span>
+              </button>
+
+              <button type="button" class="mobile-action" onclick="openPopup('sponsorshipPopup')">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <span>Sponsor</span>
+              </button>
+             </div>
+
+            <!-- MOBILE CONTACT -->
+            <div class="mobile-contact">
+              <div class="mobile-menu-label">CONTACT</div>
+              <a href="tel:+27649227445">
+                <i class="fa-solid fa-phone"></i>
+                <span>+27 64 922 7445</span>
+              </a>
+
+              <a href="mailto:support@theitcode.co.za">
+                <i class="fa-solid fa-envelope"></i>
+                <span>support@theitcode.co.za</span>
+              </a>
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>South Africa</span>
+              </span>
+             </div>
+
+            <!-- MOBILE SOCIALS -->
+            <div class="mobile-socials">
+              <a href="https://www.linkedin.com/company/theitcode" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="https://wa.me/27649227445" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- =====================================================
+         CONFIRMATION MODAL
+         ===================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="confirmationModal"
+    >
+
+        <div class="modal-content">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>
+                Message Sent Successfully!
+            </h3>
+
+            <p>
+                Thank you for reaching out to THE IT CODE.
+                Our team will get back to you within
+                24–72 hours.
+            </p>
+
+            <br>
+
+            <button
+                type="button"
+                class="btn-black"
+                onclick="closeConfirmationModal()"
+            >
+                Close Window
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header id="mainHeader">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="#home"
+            class="brand-logo"
+        >
+
+            <img
+                src="images/icon.png"
+                alt="THE IT CODE Logo"
+            >
+
+            <div class="brand-text-container">
+
+                <span class="brand-title">
+                    THE IT CODE
+                </span>
+
+                <span class="brand-tagline">
+                    Innovate.Build.Scale.Impact
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="nav-desktop"
+            aria-label="Main Navigation"
+        >
+
+            <a
+                href="#home"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+
+            <a
+                href="#about"
+                class="nav-link"
+            >
+                Who We Are
+            </a>
+
+
+            <a
+                href="#projects"
+                class="nav-link"
+            >
+                Our Products
+            </a>
+
+
+            <a
+                href="#services"
+                class="nav-link"
+            >
+                What We Do
+            </a>
+
+
+            <a
+                href="#why-us"
+                class="nav-link"
+            >
+                Why Us
+            </a>
+
+
+            <a
+                href="#contact"
+                class="nav-link"
+            >
+                Let's Talk
+            </a>
+
+        </nav>
+
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+
+            <!-- PARTNERSHIP -->
+
+            <button
+                type="button"
+                class="action-btn"
+                onclick="openPopup('partnershipPopup')"
+            >
+
+                <i class="fa-solid fa-handshake"></i>
+
+                <span>
+                    Partnership
+                </span>
+
+            </button>
+
+
+            <div class="header-divider"></div>
+
+
+            <!-- INVEST -->
+
+            <button
+                type="button"
+                class="action-btn"
+                onclick="openPopup('investorPopup')"
+            >
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>
+                    Invest
+                </span>
+
+            </button>
+
+
+            <div class="header-divider"></div>
+
+
+            <!-- SPONSOR -->
+
+            <button
+                type="button"
+                class="action-btn"
+                onclick="openPopup('sponsorshipPopup')"
+            >
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                <span>
+                    Sponsor
+                </span>
+
+            </button>
+
+
+            <!-- HAMBURGER -->
+
+            <button
+                type="button"
+                class="hamburger"
+                id="hamburger"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mobileSidebar"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="hero-content">
+
+
+            <span class="hero-eyebrow">
+                SOUTH AFRICAN TECHNOLOGY.
+                GLOBAL AMBITION.
+            </span>
+
+
+            <h1 class="hero-title">
+                Innovate.
+                Build.
+                Scale.
+                <span>Impact.</span>
+            </h1>
+
+
+            <p class="hero-subtitle">
+                Engineering high-value enterprise platforms
+                that transform legacy operational bottlenecks
+                into seamless digital ecosystems.
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <button
+                    type="button"
+                    onclick="openPopup('partnershipPopup')"
+                    class="btn-black"
+                >
+
+                    Explore Partnerships
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="openPopup('investorPopup')"
+                    class="btn-black-outline"
+                >
+
+                    Invest
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="openPopup('sponsorshipPopup')"
+                    class="btn-black-outline"
+                >
+
+                    Sponsor
+
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-proof">
+
+
+                <span>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Enterprise-ready thinking
+
+                </span>
+
+
+                <span>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Built for scale
+
+                </span>
+
+
+                <span>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    South African innovation
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+            <div class="hero-orbit hero-orbit-one"></div>
+
+            <div class="hero-orbit hero-orbit-two"></div>
+
+            <img
+                src="images/icon.png"
+                alt="THE IT CODE Brand Symbol"
+                class="bouncing-logo"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SOUTH AFRICA / COMPANY BANNER
+         ===================================================== -->
+
+    <section
+        class="company-banner"
+        aria-label="Company highlights"
+    >
+
+        <div class="company-banner-inner">
+
+
+            <div class="banner-statement">
+
+                <strong>
+                    Engineered from South Africa,
+                </strong>
+
+                <strong>
+                    built for the world.
+                </strong>
+
+            </div>
+
+
+            <div class="banner-stat">
+
+                <strong>
+                    Northern Cape, SA
+                </strong>
+
+                <span>
+                    HEADQUARTERS
+                </span>
+
+            </div>
+
+
+            <div class="banner-stat">
+
+                <strong>
+                    100% Black Woman-Owned
+                </strong>
+
+                <span>
+                    FOUNDER-LED
+                </span>
+
+            </div>
+
+
+            <div class="banner-stat">
+
+                <strong>
+                    Level 1 B-BBEE
+                </strong>
+
+                <span>
+                    CERTIFIED ENTERPRISE
+                </span>
+
+            </div>
+
+
+            <div class="banner-stat">
+
+                <strong>
+                    2 Platforms
+                </strong>
+
+                <span>
+                    IN ACTIVE DEVELOPMENT
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHO WE ARE
+         ===================================================== -->
+    <section id="about">
+        <div class="section-header">
+            <span class="section-tag">WHO WE ARE</span>
+            <h2 class="section-title">Built for Scale & Industry Transformation</h2>
+            <p class="section-intro">
+                We are a South African technology company
+                building practical digital infrastructure for
+                organisations that cannot afford to stand still.
+            </p>
+        </div>
+
+        <div class="split-layout">
+            <div>
+                <div class="bordered-block">
+                    <span class="mini-label">OUR FOUNDER'S VISION</span>
+                    <h3>Technology should remove friction, not create more of it.</h3>
+                    <p>
+                        Led by Keorapetse Makhubo, Founder & CEO,
+                        THE IT CODE addresses the critical cost of
+                        inefficient, paper-driven, and manual
+                        operational workflows.
+                    </p>
+
+                    <p>
+                        Born from first-hand technical expertise,
+                        our mission is to deliver software
+                        infrastructure that empowers institutions
+                        to operate at global efficiency standards.
+                    </p>
+                </div>
+
+                <p class="about-supporting-text">
+                    We combine research-driven software architecture,
+                    strategic workflow engineering, and robust
+                    digital compliance to build platforms that
+                    solve meaningful problems and create measurable
+                    operational value.
+                </p>
+                <div class="about-signature">
+                    <span class="signature-line"></span>
+                    <span>
+                        Research-led.
+                        Founder-driven.
+                        Impact-focused.
+                    </span>
+                </div>
+            </div>
+
+            <div class="about-metadata">
+                <div class="about-metric">
+                    <strong>01</strong>
+                    <div>
+                      <span>APPROACH</span>
+                        <p>Research before execution.</p>
+                    </div>
+                </div>
+
+                <div class="about-metric">
+                    <strong>02</strong>
+                    <div>
+                    <span>ENGINEERING</span>
+                        <p>Built around real operational problems.</p>
+                    </div>
+                </div>
+
+                <div class="about-metric">
+                    <strong>03</strong>
+                <div>
+                  <span>SCALE</span>
+                  <p>Designed for institutions, not temporary fixes.</p>
+                </div>
+                </div>
+
+                <div class="about-metric">
+                    <strong>04</strong>
+                    <div>
+                        <span>IMPACT</span>
+                        <p>Technology that creates measurable value.</p>
+                    </div>
+                </div>
+
+                <ul class="meta-list">
+                    <li class="meta-item">
+                        <i class="fa-solid fa-check"></i>
+                        Enterprise Software
+                    </li>
+
+                    <li class="meta-item">
+                        <i class="fa-solid fa-check"></i>
+                        B-BBEE Compliant
+                    </li>
+
+                    <li class="meta-item">
+                        <i class="fa-solid fa-check"></i>
+                        Scalable Infrastructure
+                    </li>
+
+                    <li class="meta-item">
+                        <i class="fa-solid fa-check"></i>
+                        Research-Led Design
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         OUR FLAGSHIP PRODUCTS
+         Same two-product structure retained
+         ===================================================== -->
+
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">OUR FLAGSHIP PRODUCTS</span>
+            <h2 class="section-title">Engineered to Disrupt Workflows</h2>
+            <p class="section-intro">
+                Two platforms.
+                Two high-value opportunities.
+                One ambition — building technology
+                capable of changing how organisations operate.
+            </p>
+        </div>
+
+        <div class="product-showcase">
+
+            <!-- =================================================
+                 HEALTHOS
+                 ================================================= -->
+            <div class="product-row flagship-product">
+                <div class="product-media">
+                    <span class="product-index">01 / FLAGSHIP PLATFORM</span>
+                    <div class="product-logo-stage">
+                        <img src="images/healthos.png" alt="HealthOS Platform Logo">
+                    </div>
+                    <span class="product-status">HEALTHTECH</span>
+                </div>
+
+                <div class="product-details">
+                    <span class="product-kicker">HEALTHOS™</span>
+                    <h3>Reimagining clinical operations.</h3>
+                    <p>
+                        A comprehensive clinical operations
+                        operating system built to streamline
+                        patient registration, digitise records,
+                        eliminate administrative backlogs,
+                        and optimise clinical workflows in
+                        real-time environments.
+                    </p>
+
+                    <ul class="feature-points">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Real-time patient intake and
+                            digital health records tracking
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Automated administrative and
+                            clinical workflow orchestration
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            High-security infrastructure
+                            engineered for high throughput
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-black" onclick="openPopup('partnershipPopup')">
+                        Request HealthOS™ Briefing
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- =================================================
+                 FOUNDER CIRCLE
+                 ================================================= -->
+
+            <div class="product-row reverse flagship-product">
+                <div class="product-media">
+                    <span class="product-index">02 / FLAGSHIP PLATFORM</span>
+                    <div class="product-logo-stage">
+                      <img src="images/thetux.png" alt="Founder Circle Logo">
+                    </div>
+                    <span class="product-status">CAPITAL & NETWORKING</span>
+                </div>
+
+                <div class="product-details">
+                    <span class="product-kicker">FOUNDER CIRCLE™</span>
+                    <h3>Connecting ambition with opportunity.</h3>
+                    <p>
+                        An enterprise networking and capital-readiness ecosystem connecting innovators, institutional investors,
+                        and strategic partners through structured data and transparent growth metrics.
+                    </p>
+
+                    <ul class="feature-points">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Direct connectivity between founders and strategic investment funds
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Structured evaluation frameworks for investment readiness
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Cross-industry partnership facilitation
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn-black" onclick="openPopup('investorPopup')">
+                        Inquire About Founder Circle™
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         WHAT WE DO
+         ===================================================== -->
+
+    <section id="services" class="services-section">
+        <div class="section-header">
+          <span class="eyebrow">WHAT WE DO</span>
+            <h2 class="section-title">Technology built around
+              <span class="accent-text">real problems.</span>
+            </h2>
+
+            <p class="section-intro">
+                We engineer software, unlock the value in data,
+                and create digital solutions that help
+                organisations operate smarter, make better
+                decisions, and scale with confidence.
+            </p>
+        </div>
+
+        <div class="services-list">
+            <!-- SERVICE 01 -->
+            <div class="service-row">
+                <div class="service-number">01</div>
+                <div class="service-content">
+                    <div class="service-heading">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <h3>Software Engineering</h3>
+                    </div>
+
+                    <p>
+                        We design, develop, and scale software
+                        solutions around real business and
+                        operational challenges. From custom
+                        applications and enterprise platforms
+                        to system integrations and workflow
+                        automation, we build technology designed
+                        to work in the real world.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Custom Software</span>
+                        <span>Web Applications</span>
+                        <span> Enterprise Systems</span>
+                        <span>Automation</span>
+                        <span>System Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 02 -->
+            <div class="service-row">
+                <div class="service-number">02</div>
+                <div class="service-content">
+                    <div class="service-heading">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </span>
+                        <h3>Data Analytics</h3>
+                    </div>
+
+                    <p>
+                        Data is only valuable when it can drive
+                        better decisions. We transform complex
+                        datasets into meaningful insights through
+                        analysis, dashboards, reporting, and
+                        data visualisation.
+                    </p>
+
+                    <div class="service-tags">
+                        <span> Data Analysis</span>
+                        <span>Dashboards</span>
+                        <span>Data Visualisation</span>
+                        <span>Business Intelligence</span>
+                        <span>Reporting</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 03 -->
+            <div class="service-row">
+                <div class="service-number">03</div>
+                <div class="service-content">
+                    <div class="service-heading">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </span>
+                        <h3>Digital Solutions & Automation</h3>
+                    </div>
+
+                    <p>
+                        We identify repetitive processes,
+                        operational bottlenecks, and disconnected
+                        systems — then engineer digital solutions
+                        that reduce friction and improve the way
+                        organisations work.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Process Automation</span>
+                        <span>Digital Transformation</span>
+                        <span>Workflow Systems</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 04 -->
+            <div class="service-row">
+                <div class="service-number">04</div>
+                <div class="service-content">
+                    <div class="service-heading">
+                        <span class="service-icon">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </span>
+                        <h3>Technology Strategy</h3>
+                    </div>
+
+                    <p>
+                        Great technology starts with the right
+                        strategy. We help organisations translate
+                        business challenges into practical
+                        technology roadmaps that are scalable,
+                        measurable, and built for long-term impact.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Technology Roadmaps</span>
+                        <span>Digital Strategy</span>
+                        <span>Systems Architecture</span>
+                        <span>Product Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         WHY US
+         ===================================================== -->
+
+    <section id="why-us" class="why-us-section">
+        <div class="section-header">
+            <span class="section-tag">WHY THE IT CODE</span>
+            <h2 class="section-title">
+                We don't build technology for technology's sake.</h2>
+
+                <p class="section-intro">
+                We build because something can work better.
+                Because inefficiency costs organisations real
+                money. Because good ideas deserve infrastructure
+                capable of carrying them further.
+            </p>
+        </div>
+
+        <div class="why-us-content">
+            <div class="why-us-statement">
+                <span class="large-number">01</span>
+
+                <h3>
+                    We start with the problem.
+                </h3>
+
+                <p>
+                    Before we write a line of code, we seek to
+                    understand the operational reality behind
+                    the problem. That keeps our technology
+                    grounded in outcomes rather than trends.
+                </p>
+
+            </div>
+
+            <div class="why-us-points">
+                <div class="why-us-point">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <div>
+                        <h4>
+                            Purpose-led engineering
+                        </h4>
+                        <p> 
+                          Every solution has a reason to exist, a problem to solve, and an outcome
+                            to pursue.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-us-point">
+                    <i class="fa-solid fa-expand"></i>
+                    <div>
+                        <h4>Built with scale in mind</h4>
+                        <p>
+                            We think beyond today's workflow and
+                            engineer systems capable of growing
+                            with the organisations they serve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-us-point">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <div>
+                        <h4>Research before assumptions</h4>
+                        <p>
+                            Our approach combines research,
+                            analysis and technical thinking to
+                            uncover opportunities hidden inside
+                            complex problems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-us-point">
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <div>
+                        <h4>African origin. Global ambition.</h4>
+                        <p>
+                            We are proudly engineered from
+                            South Africa while designing with
+                            global relevance in mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-us-bottom-line">
+            <span>The standard is simple:</span>
+            <strong>build technology worth scaling.</strong>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <span class="section-tag">READY WHEN YOU ARE</span>
+            <h2>Let's turn a difficult problem into something that works.</h2>
+
+            <p>
+                Whether you're looking for a technology partner,
+                exploring investment opportunities, or seeking
+                meaningful sponsorship opportunities, let's
+                start the conversation.
+            </p>
+
+            <div class="cta-actions">
+                <button type="button" class="btn-black" onclick="openPopup('partnershipPopup')">
+                    Start a Partnership
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button type="button" class="btn-black-outline" onclick="openPopup('investorPopup')">
+                    Explore Investment
+                    <i class="fa-solid fa-chart-line"></i>
+                </button>
+
+                <button type="button" class="btn-black-outline" onclick="openPopup('sponsorshipPopup')">
+                    Discuss Sponsorship
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-tag">CONNECT WITH US</span>
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="section-intro">
+                Have a problem worth solving, an opportunity worth exploring,
+                or an idea that needs the right technology? Tell us about it.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- CONTACT INFORMATION -->
+            <div class="contact-info">
+                <p class="contact-text">
+                    Whether you are an investor looking for market-ready software assets, an enterprise
+                    seeking workflow modernisation, or a prospective partner looking to create
+                    meaningful impact, our team is ready to listen.
+                </p>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Direct Line</strong>
+                        <p>
+                            <a href="tel:+27649227445">+27 64 922 7445</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong> Support Email</strong>
+                        <p>
+                            <a href="mailto:support@theitcode.co.za">support@theitcode.co.za</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <p>Northern Cape, South Africa</p>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <span>Connect with us</span>
+                    <a href="https://www.linkedin.com/company/theitcode" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://wa.me/27649227445" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+
+            <form class="form contactForm" action="https://formspree.io/f/mgawkzpq" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">Full Name *</label>
+                    <input id="contact-name" type="text" name="full_name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address *</label>
+                    <input id="contact-email" type="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject">Subject *</label>
+                    <input id="contact-subject" type="text" name="subject" required placeholder="Project or enquiry subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message *</label>
+                    <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-black">
+                    Send Message
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         PARTNERSHIP FORM
+         ===================================================== -->
+    <div class="popup-panel" id="partnershipPopup">
+        <button type="button" class="popup-close-btn" onclick="closePopup('partnershipPopup')" aria-label="Close partnership form">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="popup-form-container">
+            <img src="images/icon.png" alt="THE IT CODE" class="popup-logo">
+
+            <div class="popup-subtitle-tag">Partnership</div>
+            <h2 class="popup-title">Let's Build Something Together</h2>
+            <p class="popup-desc">Tell us a little about your partnership enquiry and our team will get back to you.</p>
+
+            <form class="custom-form contactForm"action="https://formspree.io/f/mgawkzpq" method="POST">
+                <div class="custom-form-group">
+                    <label for="partnership-title">Title</label>
+                    <select id="partnership-title" name="title">
+                        <option value="">Select</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Prof">Prof</option>
+                    </select>
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="partnership-position">Position / Role</label>
+                    <select id="partnership-position" name="position">
+                        <option value="">Select your position</option>
+                        <option value="Executive / Director">Executive / Director</option>
+                        <option value="Founder / CEO">Founder / CEO</option>
+                        <option value="Strategic Partner">Strategic Partner</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="partnership-first-name">First Name *</label>
+                    <input id="partnership-first-name" type="text"
+                        name="first_name" required placeholder="First name">
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="partnership-last-name">Last Name *</label>
+                    <input id="partnership-last-name" type="text" name="last_name" required placeholder="Last name">
+                </div>
+
+                <div class="custom-form-group form-full-width">
+                    <label for="partnership-company">Organization / Company</label>
+                    <input id="partnership-company" type="text" name="company" placeholder="Organization or company">
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="partnership-email">Email Address *</label>
+                    <input id="partnership-email" type="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="partnership-phone">Phone</label>
+
+                    <input id="partnership-phone" type="text" name="phone" placeholder="+27 ...">
+                </div>
+
+                <div class="custom-form-group form-full-width">
+                    <label for="partnership-interest">I'm Interested In *</label>
+
+                    <select id="partnership-interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="Strategic Partnership">Strategic Partnership</option>
+                        <option value="HealthOS Platform Integration">HealthOS™ Platform Integration</option>
+                        <option value="Founder Circle Collaboration">Founder Circle™ Collaboration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="custom-form-group form-full-width">
+                    <label for="partnership-subject">Subject *</label>
+                    <input id="partnership-subject" type="text" name="subject" required placeholder="What would you like to discuss?">
+                </div>
+
+                <div class="custom-form-group form-full-width">
+                    <label for="partnership-message">Message *</label>
+                    <textarea id="partnership-message" name="message" rows="5" required placeholder="Tell us a little about your enquiry..."></textarea>
+                </div>
+
+                <div class="custom-form-group consent-group form-full-width">
+                    <label class="consent-label">
+                        <input type="checkbox" name="contact_consent" value="yes" required>
+                        <span>I agree to THE IT CODE contacting me regarding this enquiry.</span>
+                    </label>
+                </div>
+
+                <div class="form-submit-row">
+                    <button type="submit" class="btn-black">
+                        <span>Send Enquiry</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         INVESTMENT FORM
+         ===================================================== -->
+    <div class="popup-panel" id="investorPopup">
+        <button type="button" class="popup-close-btn" onclick="closePopup('investorPopup')" aria-label="Close investment form">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="popup-form-container">
+            <img src="images/icon.png" alt="THE IT CODE" class="popup-logo">
+            <div class="popup-subtitle-tag">Investment</div>
+            <h2 class="popup-title">Let's Invest in What Comes Next</h2>
+            <p class="popup-desc">Tell us about your investment interests and the opportunity you would like to explore.</p>
+
+            <form class="custom-form contactForm" action="https://formspree.io/f/xwleypqo" method="POST">
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-title">
+                        Title
+                    </label>
+
+                    <select
+                        id="investor-title"
+                        name="title"
+                    >
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option value="Mr">
+                            Mr
+                        </option>
+
+                        <option value="Ms">
+                            Ms
+                        </option>
+
+                        <option value="Mrs">
+                            Mrs
+                        </option>
+
+                        <option value="Dr">
+                            Dr
+                        </option>
+
+                        <option value="Prof">
+                            Prof
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-position">
+                        Position / Role
+                    </label>
+
+                    <select
+                        id="investor-position"
+                        name="position"
+                    >
+
+                        <option value="">
+                            Select your position
+                        </option>
+
+                        <option value="Angel Investor">
+                            Angel Investor
+                        </option>
+
+                        <option value="VC / Fund Manager">
+                            VC / Fund Manager
+                        </option>
+
+                        <option value="Corporate Investor">
+                            Corporate Investor
+                        </option>
+
+                        <option value="Strategic Advisor">
+                            Strategic Advisor
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-first-name">
+                        First Name *
+                    </label>
+
+                    <input
+                        id="investor-first-name"
+                        type="text"
+                        name="first_name"
+                        required
+                        placeholder="First name"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-last-name">
+                        Last Name *
+                    </label>
+
+                    <input
+                        id="investor-last-name"
+                        type="text"
+                        name="last_name"
+                        required
+                        placeholder="Last name"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="investor-company">
+                        Organization / Investment Firm
+                    </label>
+
+                    <input
+                        id="investor-company"
+                        type="text"
+                        name="company"
+                        placeholder="Investment firm, fund, or organization"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-email">
+                        Email Address *
+                    </label>
+
+                    <input
+                        id="investor-email"
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="investor-phone">
+                        Phone / WhatsApp
+                    </label>
+
+                    <input
+                        id="investor-phone"
+                        type="text"
+                        name="phone"
+                        placeholder="+27 ..."
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="investor-interest">
+                        Investment Interest *
+                    </label>
+
+                    <select
+                        id="investor-interest"
+                        name="interest"
+                        required
+                    >
+
+                        <option value="">
+                            Select interest type
+                        </option>
+
+                        <option value="Seed Equity Investment">
+                            Seed Equity Investment
+                        </option>
+
+                        <option value="HealthOS Investment">
+                            HealthOS™ Investment
+                        </option>
+
+                        <option value="Founder Circle Investment">
+                            Founder Circle™ Investment
+                        </option>
+
+                        <option value="Strategic Enterprise Deal">
+                            Strategic Enterprise Deal
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="investor-subject">
+                        Subject *
+                    </label>
+
+                    <input
+                        id="investor-subject"
+                        type="text"
+                        name="subject"
+                        required
+                        placeholder="What opportunity would you like to discuss?"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="investor-message">
+                        Message *
+                    </label>
+
+                    <textarea
+                        id="investor-message"
+                        name="message"
+                        rows="5"
+                        required
+                        placeholder="Tell us about your investment mandate..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <div class="custom-form-group consent-group form-full-width">
+
+                    <label class="consent-label">
+
+                        <input
+                            type="checkbox"
+                            name="contact_consent"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I agree to THE IT CODE contacting me regarding this enquiry.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <div class="form-submit-row">
+
+                    <button
+                        type="submit"
+                        class="btn-black"
+                    >
+
+                        <span>
+                            Send Enquiry
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SPONSORSHIP FORM
+         ===================================================== -->
+
+    <div
+        class="popup-panel"
+        id="sponsorshipPopup"
+    >
+
+
+        <button
+            type="button"
+            class="popup-close-btn"
+            onclick="closePopup('sponsorshipPopup')"
+            aria-label="Close sponsorship form"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+
+        <div class="popup-form-container">
+
+
+            <img
+                src="images/icon.png"
+                alt="THE IT CODE"
+                class="popup-logo"
+            >
+
+
+            <div class="popup-subtitle-tag">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                Sponsorship
+
+            </div>
+
+
+            <h2 class="popup-title">
+                Put Your Brand Behind Meaningful Innovation
+            </h2>
+
+
+            <p class="popup-desc">
+                Tell us about your organisation, sponsorship
+                objectives, and the kind of impact you want
+                to support.
+            </p>
+
+
+
+            <form
+                class="custom-form contactForm"
+                action="https://formspree.io/f/mbgrwlkk"
+                method="POST"
+            >
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-title">
+                        Title
+                    </label>
+
+                    <select
+                        id="sponsor-title"
+                        name="title"
+                    >
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option value="Mr">
+                            Mr
+                        </option>
+
+                        <option value="Ms">
+                            Ms
+                        </option>
+
+                        <option value="Mrs">
+                            Mrs
+                        </option>
+
+                        <option value="Dr">
+                            Dr
+                        </option>
+
+                        <option value="Prof">
+                            Prof
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-position">
+                        Position / Role
+                    </label>
+
+                    <select
+                        id="sponsor-position"
+                        name="position"
+                    >
+
+                        <option value="">
+                            Select your position
+                        </option>
+
+                        <option value="Executive / Director">
+                            Executive / Director
+                        </option>
+
+                        <option value="Marketing / Brand">
+                            Marketing / Brand
+                        </option>
+
+                        <option value="Corporate Affairs">
+                            Corporate Affairs
+                        </option>
+
+                        <option value="CSR / CSI">
+                            CSR / CSI
+                        </option>
+
+                        <option value="Foundation / Trust">
+                            Foundation / Trust
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-first-name">
+                        First Name *
+                    </label>
+
+                    <input
+                        id="sponsor-first-name"
+                        type="text"
+                        name="first_name"
+                        required
+                        placeholder="First name"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-last-name">
+                        Last Name *
+                    </label>
+
+                    <input
+                        id="sponsor-last-name"
+                        type="text"
+                        name="last_name"
+                        required
+                        placeholder="Last name"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="sponsor-company">
+                        Organisation / Brand *
+                    </label>
+
+                    <input
+                        id="sponsor-company"
+                        type="text"
+                        name="company"
+                        required
+                        placeholder="Organisation or brand"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-email">
+                        Email Address *
+                    </label>
+
+                    <input
+                        id="sponsor-email"
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group">
+
+                    <label for="sponsor-phone">
+                        Phone / WhatsApp
+                    </label>
+
+                    <input
+                        id="sponsor-phone"
+                        type="text"
+                        name="phone"
+                        placeholder="+27 ..."
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="sponsor-interest">
+                        Sponsorship Focus *
+                    </label>
+
+                    <select
+                        id="sponsor-interest"
+                        name="interest"
+                        required
+                    >
+
+                        <option value="">
+                            Select sponsorship focus
+                        </option>
+
+                        <option value="HealthOS Sponsorship">
+                            HealthOS™
+                        </option>
+
+                        <option value="Founder Circle Sponsorship">
+                            Founder Circle™
+                        </option>
+
+                        <option value="Technology Sponsorship">
+                            Innovation / Technology
+                        </option>
+
+                        <option value="Strategic Sponsorship">
+                            Brand / Strategic Sponsorship
+                        </option>
+
+                        <option value="Community Impact">
+                            Community / Impact
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="sponsor-budget">
+                        Estimated Sponsorship Range
+                    </label>
+
+                    <select
+                        id="sponsor-budget"
+                        name="budget"
+                    >
+
+                        <option value="">
+                            Prefer not to say
+                        </option>
+
+                        <option value="Under R50,000">
+                            Under R50,000
+                        </option>
+
+                        <option value="R50,000 - R250,000">
+                            R50,000 – R250,000
+                        </option>
+
+                        <option value="R250,000 - R1,000,000">
+                            R250,000 – R1,000,000
+                        </option>
+
+                        <option value="R1,000,000+">
+                            R1,000,000+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="sponsor-subject">
+                        Subject *
+                    </label>
+
+                    <input
+                        id="sponsor-subject"
+                        type="text"
+                        name="subject"
+                        required
+                        placeholder="What would you like to discuss?"
+                    >
+
+                </div>
+
+
+
+                <div class="custom-form-group form-full-width">
+
+                    <label for="sponsor-message">
+                        Message *
+                    </label>
+
+                    <textarea
+                        id="sponsor-message"
+                        name="message"
+                        rows="5"
+                        required
+                        placeholder="Tell us about your sponsorship objectives..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <div class="custom-form-group consent-group form-full-width">
+
+                    <label class="consent-label">
+
+                        <input
+                            type="checkbox"
+                            name="contact_consent"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I agree to THE IT CODE contacting me regarding this enquiry.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <div class="form-submit-row">
+
+                    <button
+                        type="submit"
+                        class="btn-black"
+                    >
+
+                        <span>
+                            Send Enquiry
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-top">
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="brand-logo"
+                >
+
+                    <img
+                        src="images/icon.png"
+                        alt="THE IT CODE Logo"
+                    >
+
+                    <div class="brand-text-container">
+
+                        <span
+                            class="brand-title"
+                            style="color:#7f7f7f;"
+                        >
+                            THE IT CODE
+                        </span>
+
+                        <span
+                            class="brand-tagline"
+                            style="color:#aaa;"
+                        >
+                            Innovate.Build.Scale.Impact
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p class="brand-desc">
+                    Engineering high-value enterprise workflow
+                    platforms that transform legacy operational
+                    bottlenecks into seamless digital ecosystems.
+                </p>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+            <div class="footer-col">
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- SOLUTIONS -->
+
+            <div class="footer-col">
+
+                <h4>
+                    Solutions
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#projects">
+                            HealthOS™
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Founder Circle™
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Workflow Optimization
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Digital Solutions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-col">
+
+                <h4>
+                    Newsletter
+                </h4>
+
+                <p class="newsletter-desc">
+                    Subscribe to receive insights
+                    and growth updates.
+                </p>
+
+
+                
+<form class="newsletter-form" action="https://formspree.io/f/xyegozbo" method="POST">
+
+   <input id="footer-newsletter-email" 
+                           type="email" 
+                           name="email" 
+                           required 
+                           placeholder="Enter your email address">
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+
+                <div
+                    class="footer-socials"
+                    aria-label="Social media"
+                >
+
+                    <span>
+                        Connect with THE IT CODE
+                    </span>
+
+
+                    <a
+                        href="https://www.linkedin.com/company/theitcode"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/27649227445"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div>
+                &copy; 2025 THE IT CODE (Pty) Ltd.
+                All Rights Reserved.
+            </div>
+
+            <div>
+                100% Black Female-Owned Business |
+                B-BBEE Level 1 Compliant
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html
